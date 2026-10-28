@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amjaad Affana - Portfolio</title>
+    <meta name="description" content="Amjaad Affana – E-Commerce & AI Transformation Leader and MSc AI Engineering candidate at Effat University, Jeddah.">
+
+    <!-- Apply the saved theme before the page paints (avoids a flash of the wrong theme) -->
+    <script>
+        (function () {
+            document.documentElement.classList.add('js');
+            var theme = null;
+            try { theme = localStorage.getItem('theme'); } catch (e) {}
+            if (!theme) {
+                theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">Amjaad Affana</a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I’m <span class="highlight">Amjaad Affana</span></h1>
+            <p class="tagline">E-Commerce &amp; AI Transformation Leader | MSc AI Engineering Candidate</p>
+            <p class="intro">I turn AI and data into real business results, from a customer-service chatbot that made our team 80% more efficient to a SAR 20M+ online business that doubled year on year.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="assets/Amjaad_Affana_CV_2026.pdf" class="btn btn-link" download>
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Put your photo at images/profile.jpg and it will replace the initials automatically -->
+            <span class="avatar-initials" aria-hidden="true">AA</span>
+            <img src="images/profile.jpg" alt="Amjaad Affana" onerror="this.remove()">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text reveal">
+                <p>I’m a Master’s student in Artificial Intelligence Engineering at Effat University, with more than ten years of experience in e-commerce across FMCG, retail, fitness, and digital commerce.</p>
+                <p>My path into technology started with a degree in Management Information Systems at King Abdulaziz University, where I learned to connect business problems with technical solutions. Early on I built websites with PHP and MySQL, and over the years I moved from running online stores to leading the systems, data, and automation behind them.</p>
+                <p>Today I lead e-commerce at Aljouf Agricultural Development Company and I’m a founding member of the company’s AI Committee. I’m studying AI engineering to go deeper into how these systems work, so I can design and build practical AI solutions, not only manage them.</p>
+            </div>
+            <div class="about-info reveal">
+                <div class="info-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>MSc Artificial Intelligence Engineering (in progress)</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-database"></i>
+                    <span>BSc Management Information Systems</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>10+ years in e-commerce</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>PMP certified</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jeddah, Saudi Arabia</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-language"></i>
+                    <span>Arabic (native), English (professional)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-brain"></i> AI &amp; Machine Learning</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">LLM APIs (OpenAI, Claude)</span>
+                    <span class="skill-tag">AI Chatbots</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                    <span class="skill-tag">Google Colab</span>
+                </div>
+            </div>
+
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-gears"></i> Automation &amp; Integration</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">n8n</span>
+                    <span class="skill-tag">Power Automate</span>
+                    <span class="skill-tag">Workflow Automation</span>
+                    <span class="skill-tag">API Integrations</span>
+                    <span class="skill-tag">Payment Gateways</span>
+                </div>
+            </div>
+
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-chart-line"></i> Data &amp; Analytics</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Google Analytics</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">KPI Dashboards</span>
+                    <span class="skill-tag">Forecasting</span>
+                </div>
+            </div>
+
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-laptop-code"></i> Web &amp; E-Commerce</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">PHP &amp; MySQL</span>
+                    <span class="skill-tag">Magento</span>
+                    <span class="skill-tag">Shopify</span>
+                    <span class="skill-tag">OpenCart</span>
+                    <span class="skill-tag">SEO / SEM</span>
+                </div>
+            </div>
+
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-server"></i> Business Systems</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Microsoft Dynamics 365</span>
+                    <span class="skill-tag">Oracle Fusion</span>
+                    <span class="skill-tag">Salesforce</span>
+                    <span class="skill-tag">Zoho CRM</span>
+                    <span class="skill-tag">Amazon &amp; Noon Marketplaces</span>
+                </div>
+            </div>
+
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-users"></i> Leadership &amp; Strategy</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">AI Strategy &amp; Adoption</span>
+                    <span class="skill-tag">Digital Transformation</span>
+                    <span class="skill-tag">P&amp;L Management</span>
+                    <span class="skill-tag">Project Management (PMP)</span>
+                    <span class="skill-tag">Team Building</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-info">
+                    <h3>AI Customer-Service Chatbot</h3>
+                    <p>Deployed an AI chatbot on the online store that handles exchange and return requests automatically. It improved service efficiency by 80% and raised customer satisfaction.</p>
+                    <div class="project-tech">
+                        <span>LLM APIs</span>
+                        <span>Workflow Automation</span>
+                        <span>OpenCart</span>
+                        <span>CRM</span>
+                    </div>
+                    <div class="project-links">
+                        <!-- Replace # with your Colab or GitHub link -->
+                        <a href="#"><i class="fab fa-google"></i> Colab</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Smart Farm Program</h3>
+                    <p>Team member on a program that uses IoT sensors, drones, and robotics to improve farming efficiency, support better decisions, and reduce operating costs.</p>
+                    <div class="project-tech">
+                        <span>IoT Sensors</span>
+                        <span>Drones</span>
+                        <span>Robotics</span>
+                        <span>Data Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-google"></i> Colab</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Growth Plan &amp; Dashboards</h3>
+                    <p>Wrote the growth plan for a SAR 20M+ online business that delivered 100% year-on-year growth, supported by executive dashboards for sales, forecasts, and P&amp;L.</p>
+                    <div class="project-tech">
+                        <span>Power BI</span>
+                        <span>Excel</span>
+                        <span>Forecasting</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-google"></i> Colab</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <i class="fas fa-chalkboard-user"></i>
+                </div>
+                <div class="project-info">
+                    <h3>AI Upskilling Program</h3>
+                    <p>Co-led training that taught 75 employees (45 administrative and 30 operations staff) to use AI tools in their daily work.</p>
+                    <div class="project-tech">
+                        <span>ChatGPT</span>
+                        <span>Claude</span>
+                        <span>Prompt Engineering</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-google"></i> Colab</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <i class="fas fa-diagram-project"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Omnichannel Systems Integration</h3>
+                    <p>Led integrations that connect the online store and mobile apps with warehouse, shipping, payment, CRM, and customer-service systems.</p>
+                    <div class="project-tech">
+                        <span>OpenCart</span>
+                        <span>WMS</span>
+                        <span>Payment Gateways</span>
+                        <span>Dynamics 365</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-google"></i> Colab</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <span class="timeline-date">Jun 2023 – Present</span>
+                <h3>E-Commerce Manager</h3>
+                <p class="timeline-company">Aljouf Agricultural Development Company</p>
+                <p>Lead a SAR 20M+ online business across the online store, mobile apps, and marketplaces (Amazon, Noon, Ninja). Built the e-commerce team and its 5-year strategy, and serve as a founding member of the AI Committee.</p>
+            </div>
+            <div class="timeline-item reveal">
+                <span class="timeline-date">Nov 2020 – May 2023</span>
+                <h3>E-Commerce Sales Senior Supervisor</h3>
+                <p class="timeline-company">Technogym – Fitness Lines</p>
+                <p>Drove about SAR 10M in online sales through Magento and led the telesales team using Salesforce CRM.</p>
+            </div>
+            <div class="timeline-item reveal">
+                <span class="timeline-date">Jan 2019 – Oct 2020</span>
+                <h3>E-Commerce Sales Supervisor</h3>
+                <p class="timeline-company">H2O Medical Wear</p>
+                <p>Ran the e-commerce department end to end, including the OpenCart store, customer support, and digital campaigns.</p>
+            </div>
+            <div class="timeline-item reveal">
+                <span class="timeline-date">May 2017 – Oct 2018</span>
+                <h3>Key Account Executive</h3>
+                <p class="timeline-company">The Marketing Concept / Elephant Nation</p>
+                <p>Planned and delivered custom e-commerce stores for clients, coordinating creative, technical, and marketing teams.</p>
+            </div>
+            <div class="timeline-item reveal">
+                <span class="timeline-date">Jul 2016 – Mar 2017</span>
+                <h3>Marketing Senior Specialist</h3>
+                <p class="timeline-company">Yves Rocher – AlBatool Company</p>
+                <p>Helped build the e-commerce function, contributing to about SAR 5M in sales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="education">
+        <h2 class="section-title">Education &amp; Certifications</h2>
+        <div class="education-grid">
+            <div class="education-block reveal">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="edu-item">
+                    <h4>Master of Engineering in Artificial Intelligence</h4>
+                    <p>Effat University, Jeddah</p>
+                    <span>In progress</span>
+                </div>
+                <div class="edu-item">
+                    <h4>BSc Management Information Systems</h4>
+                    <p>King Abdulaziz University, Jeddah</p>
+                    <span>2011 – 2015 | Excellent with Honors, GPA 4.63 / 5</span>
+                </div>
+            </div>
+            <div class="education-block reveal">
+                <h3><i class="fas fa-award"></i> Certifications</h3>
+                <ul class="cert-list">
+                    <li><strong>Project Management Professional (PMP)</strong><span>PMI, 2025</span></li>
+                    <li><strong>Google Digital Marketing &amp; E-Commerce</strong><span>Google, 2023</span></li>
+                    <li><strong>Report &amp; Analysis Professional</strong><span>2023</span></li>
+                    <li><strong>Customer Service Professional</strong><span>2023</span></li>
+                    <li><strong>Digital Marketing</strong><span>Saudi Council of Engineers, 2017</span></li>
+                    <li><strong>PHP &amp; MySQL Website Development</strong><span>2017</span></li>
+                    <li><strong>SAP HANA CodeJam</strong><span>2014</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content reveal">
+            <p>I’m open to collaborations, AI and e-commerce projects, and research opportunities.</p>
+            <div class="contact-methods">
+                <a href="mailto:Amjad.Affana@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Amjad.Affana@gmail.com</span>
+                </a>
+                <!-- Replace # with your LinkedIn URL, e.g. https://linkedin.com/in/yourprofile -->
+                <a href="#" class="contact-item" data-hide-if-empty>
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/engAmjaadtec" class="contact-item" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="year">2026</span> Amjaad Affana. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/engAmjaadtec" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" data-hide-if-empty aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:Amjad.Affana@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
